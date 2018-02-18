@@ -3,14 +3,41 @@
   margin: 0;
 }
 
+html, body, .block{
+  height: 100vh;
+}
+
+.nav-bar-top{
+  background-color: #d90368;
+}
+
+/* ESTILOS PRIMERA SECCION: INTRO CON TYPED-TEXT */
+
+#particles-js, .intro{
+  background-color: #d90368;
+  background-image: url("../images/background-intro.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 100%;
+}
+
+#typed-strings{
+  font-family: 'Source Code Pro', monospace;
+  font-size: 2em;
+  padding: 3% 20%;
+  color: white /* (o verde paleta portafolio) #00cc66 */;
+}
+
 h1, h3{
   font-family: 'Dancing Script', cursive;
   text-align: center;
+  font-weight: bold;
 }
 
 h1{
   color: #d90368;
   font-size: 5em;
+  padding-top: 5%;
 }
 
 h3{
@@ -18,9 +45,89 @@ h3{
   font-size: 3em;
 }
 
-#gato-construccion{
-  padding: 3% 25%;
+/* imagen en parallax (no se si poner aun...)
+.parallax-container {
+  height: 80%;
+} */
+
+/* SEGUNDA SECCION: ABOUT ME */
+#green .top-about-me{
+  background-color: #00cc66;
 }
+
+#gato-construccion{
+  padding: 10% 20%;
+}
+
+.about-me{
+  background-color: #00cc66;
+}
+
+.short-bio{
+  padding: 2%;
+  text-align: center;
+}
+
+.skills{
+  background-color: #f75c03;
+}
+
+i{
+  font-size: 4em;
+  text-align: center;
+}
+
+.extra-icons{
+  width: 60%;
+}
+
+h2, h4, h5{
+  text-align: center;
+}
+/* .skills-part-1{
+  background-color: orange;
+}
+
+.skills-part-2{
+  background-color: gold;
+}
+
+/*#orange .skills{
+  background-color: #f75c03;
+}*/
+
+/* #blue */ .projects{
+  background-color: #2274a5;
+}
+
+/* #yellow */ .contact-me{
+  background-color: #f1c40f;
+}
+
+/*.pin-top {
+  position: relative;
+}
+
+.pin-bottom {
+  position: relative;
+}
+
+.pinned {
+  position: fixed !important;
+} */
+
+/* ESTILOS FOOTER */
+
+footer, .page-footer{
+  background-color: #d90368;
+  padding: 1.5% 0;
+}
+footer p{
+  text-align: center;
+}
+
+
+/* maquetacion previa */
 
 #image-palette{
   padding: 3% 20%;
