@@ -1,32 +1,46 @@
+/* COLORES CV VERSION 1:
+MAGENTA: #E01E5A
+GRIS CLARO: #CCCCCC
+NEGRO: #000000
+BLANCO: #FFFFFF
+*/
+
 *{
   padding: 0;
   margin: 0;
 }
 
 html, body, .block{
-  height: 100vh;
+  height: 100%;
 }
 
 .nav-bar-top{
-  background-color: #d90368;
+  background-color: #E01E5A;
 }
 
 /* ESTILOS PRIMERA SECCION: INTRO CON TYPED-TEXT */
 
-#particles-js, .intro{
-  background-color: #d90368;
-  background-image: url("../images/background-intro.jpg");
+#gitbash_window{
+  background-position: center;
+  position: relative;
+}
+
+.intro{
+  background-image: url("../images/digital_background_2.jpg");
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
   height: 100%;
 }
 
 #typed-strings{
   font-family: 'Source Code Pro', monospace;
   font-size: 2em;
-  padding: 3% 20%;
+  /* padding: 0 20%; */
   color: white /* (o verde paleta portafolio) #00cc66 */;
+  text-align: center;
+  position: absolute;
 }
+
 
 h1, h3{
   font-family: 'Dancing Script', cursive;
@@ -35,9 +49,9 @@ h1, h3{
 }
 
 h1{
-  color: #d90368;
+  color: #E01E5A;
   font-size: 5em;
-  padding-top: 5%;
+  position: absolute;
 }
 
 h3{
@@ -51,25 +65,27 @@ h3{
 } */
 
 /* SEGUNDA SECCION: ABOUT ME */
-#green .top-about-me{
-  background-color: #00cc66;
+.about-me, .projects{
+  background-color: #adadad;
 }
 
-#gato-construccion{
+#profile_temp{
   padding: 10% 20%;
 }
 
-.about-me{
-  background-color: #00cc66;
-}
-
-.short-bio{
+h3.short-bio{
+  color: #E01E5A;
+  font-weight: bold;
   padding: 2%;
   text-align: center;
 }
 
+p.short-bio{
+  padding: 2%;
+}
+
 .skills{
-  background-color: #f75c03;
+  background-color: #000000;
 }
 
 i{
@@ -82,29 +98,20 @@ i{
 }
 
 h2, h4, h5{
+  color: #E01E5A;
   text-align: center;
 }
-/* .skills-part-1{
-  background-color: orange;
+
+.devicons{
+  color: #E01E5A;
+  margin: 20%;
 }
 
-.skills-part-2{
-  background-color: gold;
+.contact-me{
+  background-color: #E01E5A;
 }
 
-/*#orange .skills{
-  background-color: #f75c03;
-}*/
-
-/* #blue */ .projects{
-  background-color: #2274a5;
-}
-
-/* #yellow */ .contact-me{
-  background-color: #f1c40f;
-}
-
-/*.pin-top {
+.pin-top {
   position: relative;
 }
 
@@ -114,29 +121,14 @@ h2, h4, h5{
 
 .pinned {
   position: fixed !important;
-} */
+}
 
 /* ESTILOS FOOTER */
 
 footer, .page-footer{
-  background-color: #d90368;
+  background-color: #000000;
   padding: 1.5% 0;
 }
 footer p{
   text-align: center;
-}
-
-
-/* maquetacion previa */
-
-#image-palette{
-  padding: 3% 20%;
-}
-
-.textos-sketching{
-  color: #2274a5;
-}
-
-.sketches{
-  padding: 3% 12%;
 }

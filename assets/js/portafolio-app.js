@@ -1,22 +1,13 @@
 $(document).ready(function() {
-  /* $('.parallax').parallax();
+  /* $('.parallax').parallax(); */
+
   $('.target').pushpin({
     top: 0,
-    bottom: 1000,
+    bottom: 1500,
     offset: 0
   });
-});
 
-$('.pushpin-demo-nav').each(function() {
-  var $this = $(this);
-  var $target = $('#' + $(this).attr('data-target'));
-  $this.pushpin({
-    top: $target.offset().top,
-    bottom: $target.offset().top + $target.outerHeight() - $this.height()
-  }); */
-
-  $('.carousel.carousel-slider').carousel({
-    fullWidth: true,
-    indicators: true
+  $('.tooltipped').tooltip({
+    delay: 50
   });
 });
