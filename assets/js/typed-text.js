@@ -1,7 +1,7 @@
 // ANIMACION TEXTO SECCION "INTRO"
 var typed3 = new Typed('#typed-strings', {
   strings: ['$> _', '$> never.stop.watching(...)_', '$> never.stop.learning(...)_',
-    '$> never.stop.trying(...)_', '$> never.stop.be-curious(...)_',
+    '$> never.stop.trying(...)_', '$> never.stop.curiosity(...)_',
     '$> never.give-up(!) :)_'
   ],
   typeSpeed: 40,

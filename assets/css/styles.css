@@ -10,117 +10,168 @@ BLANCO: #FFFFFF
   margin: 0;
 }
 
-html, body, .block{
+html, body .block{
   height: 100%;
 }
 
-.nav-bar-top{
-  background-color: #E01E5A;
+/* ESTILOS (TODAS) BARRAS DE NAVEGACION */
+
+.pin-top {
+  position: sticky;
+  z-index: 100;
+}
+
+.pin-bottom {
+  position: relative;
+  z-index: 100;
+}
+
+.pinned {
+  position: fixed !important;
+  z-index: 100;
 }
 
 /* ESTILOS PRIMERA SECCION: INTRO CON TYPED-TEXT */
 
+#pink, #pink-nav{
+  background-color: #E01E5A;
+}
+
 #gitbash_window{
+  margin: 8% 25%;
   background-position: center;
-  position: relative;
+  position: absolute;
+  z-index: 0;
 }
 
 .intro{
-  background-image: url("../images/digital_background_2.jpg");
+  background-color: #E01E5A;
+  background-image: url("../images/Amazing-night-sky.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  height: 100%;
+  height: 100vh;
 }
 
 #typed-strings{
   font-family: 'Source Code Pro', monospace;
-  font-size: 2em;
-  /* padding: 0 20%; */
-  color: white /* (o verde paleta portafolio) #00cc66 */;
-  text-align: center;
-  position: absolute;
+  font-size: 1.75em;
+  padding: 0 0 8% 27%;
+  color: white;
+  text-align: left;
+  position: relative;
 }
 
-
-h1, h3{
+#my-name{
   font-family: 'Dancing Script', cursive;
   text-align: center;
   font-weight: bold;
-}
-
-h1{
+  margin: 12% 0 0 0;
   color: #E01E5A;
-  font-size: 5em;
-  position: absolute;
+  font-size: 4.8em;
+  position: relative;
+  z-index: 10;
 }
 
-h3{
-  color: #00cc66;
-  font-size: 3em;
+#my-range{
+  /*font-family: 'Dancing Script', cursive;*/
+  text-align: center;
+  font-weight: bold;
+  color: #adadad;
+  font-size: 2.5em;
+  margin: 0;
+  z-index: 10;
 }
 
-/* imagen en parallax (no se si poner aun...)
-.parallax-container {
-  height: 80%;
-} */
 
 /* SEGUNDA SECCION: ABOUT ME */
-.about-me, .projects{
+
+#gray, #gray-nav, #gray-2, #gray-2-nav{
   background-color: #adadad;
+}
+
+.about-me{
+  background-color: #adadad;
+  height: 100vh;
 }
 
 #profile_temp{
   padding: 10% 20%;
 }
 
-h3.short-bio{
-  color: #E01E5A;
+.short-bio{
+  font-family: 'Dancing Script', cursive;
   font-weight: bold;
-  padding: 2%;
   text-align: center;
 }
 
-p.short-bio{
-  padding: 2%;
+#title-short-bio{
+  margin-top: 10%;
+  color: #E01E5A;
 }
 
-.skills{
-  background-color: #000000;
-}
-
-i{
-  font-size: 4em;
+#description-short-bio{
+  padding: 1% 3%;
   text-align: center;
 }
 
 .extra-icons{
-  width: 60%;
+  width: 40%;
 }
 
-h2, h4, h5{
-  color: #E01E5A;
-  text-align: center;
+/* TERCERA SECCION: SKILLS */
+
+#black, #black-nav{
+  background-color: #000000;
+}
+
+.skills{
+  background-color: #000000;
+  background-image: url("../images/pexels-photo-270632.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+}
+
+.skills-part-1, .skills-part-2{
+  background-color: #E01E5A;
+  padding: 1% 5%;
+  margin-top: 5%;
+}
+
+#title-skills-1, #title-skills-2{
+  color: white;
 }
 
 .devicons{
-  color: #E01E5A;
-  margin: 20%;
+  color: #ffffff;
+  padding: 20%;
+  font-size: 1.5em;
 }
+
+/* CUARTA SECCION: PROJECTS */
+
+.projects{
+  background-color: #adadad;
+  height: 100%;
+}
+
+#title-projects{
+  color: #E01E5A;
+}
+
+/* QUINTA SECCION: CONTACT-ME */
 
 .contact-me{
   background-color: #E01E5A;
+  height: 100%;
 }
 
-.pin-top {
-  position: relative;
+#title-contact{
+  color: white;
 }
 
-.pin-bottom {
-  position: relative;
-}
-
-.pinned {
-  position: fixed !important;
+.contact-button{
+  margin: 1% 10%;
 }
 
 /* ESTILOS FOOTER */

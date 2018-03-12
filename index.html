@@ -1,318 +1,473 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Daniela Gallardo - Portafolio</title>
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Source+Code+Pro" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/styles.css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Daniela Gallardo - Portafolio</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Source+Code+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
 
-  <body>
-    <!--<nav>
-      <div class="nav-wrapper nav-bar-top">
-        <a href="#" class="brand-logo"><span id="dany-handwritten">D.G.</span></a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="#">Daniela</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Trabajos</a></li>
-          <li><a href="#">¡Contáctame!</a></li>
-        </ul>
+<body>
+
+  <!-- OBSERVACIONES POR MODIFICAR (AÚN)
+    1) CAMBIAR HEIGHT EN CSS A 100VH (NO FUNCIONA PARA MOBILE TODAVÍA)
+    2) ARREGLAR TEXTOS INTRO PARA CUADRAR EN VENTANA DE GITBASH
+    3) FOTO PERFIL VERSION RESPONSIVE -->
+
+  <!-- SECCION INTRO -->
+  <div id="pink" class="block">
+    <nav class="pushpin-demo-nav pinned" data-target="pink">
+      <div id="pink-nav" class="nav-wrapper">
+        <div class="container">
+          <a href="#">Hola!</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse right">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="nav-mobile right hide-on-med-and-down">
+            <li>
+              <a href="#">Habilidades</a>
+            </li>
+            <li>
+              <a href="#">Proyectos</a>
+            </li>
+            <li>
+              <a href="#">¡Contáctame!</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </nav>-->
+    </nav>
 
     <div class="intro">
       <div class="row">
         <div class="col s12">
-          <div class="row">
-            <div class="col s2"></div>
-            <div class="col s8">
-              <img src="assets/images/background-intro.jpg" id="gitbash_window" alt="">
-              <h1>Daniela Gallardo Marchant</h1>
-              <h4>Front-End Developer Jr. (& Graphic Designer)</h4>
-              <div id="typed-strings"></div>
-              <span id="typed"></span>
-            </div>
-            <div class="col s2"></div>
-          </div>
+          <img src="assets/images/background-intro.jpg" id="gitbash_window" class="center-align hide-on-med-and-down">
+          <h1 id="my-name" class="center-align">Daniela Gallardo
+            <br> Marchant</h1>
+          <h5 id="my-range" class="center-align">Desarrolladora Front-End Jr.
+            <br> (Publicista + Diseñadora Gráfica)</h5>
+          <div id="typed-strings" class="hide-on-med-and-down"></div>
+          <span id="typed" class="hide-on-med-and-down"></span>
         </div>
       </div>
     </div>
 
-    <!--<div class="parallax-container">
-      <div class="parallax">
-        <img src="assets/images/background-intro.jpg" alt="">
-      </div>
-      <h1>Daniela Gallardo Marchant</h1>
-      <p>Front-End Designer xD</p>
-    </div>-->
+  </div>
 
-    <div id="gray" class="block about-me">
-      <nav class="pushpin-demo-nav pinned" data-target="gray" style="top: 0px;">
-        <div class="nav-wrapper about-me">
-          <div class="container">
-            <a href="#">Hola!</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li><a href="#">Skills</a></li>
-              <li><a href="#">Trabajos</a></li>
-              <li><a href="#">¡Contáctame!</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
 
-      <div class="block about-me">
-
-        <div class="row">
-
-          <div class="col s6">
-            <img src="assets/images/profile_temp.jpg" id="profile_temp" class="responsive-img circle" alt="">
-          </div>
-
-          <div class="col s6">
-            <h3 class="short-bio">Hola, mi nombre es Daniela</h3>
-            <p class="short-bio">
-              Soy alumna egresada de la Quinta Generación de Laboratoria, con especialización en Desarrollo Front-End. También soy alumna Titulada de Inacap, en la carrera de Publicidad. Con el tiempo fui especializándome en Diseño Gráfico, ya que es un área que me
-              gusta mucho. Siempre mantengo el interés por escuchar, descubrir, aprender, trabajar en equipo e irme superando cada día.
-            </p>
-            <br>
-            <div class="divider"></div>
-
-            <div class="col s12">
-              <h3 class="short-bio">Unas cuantas aficiones e intereses</h3>
-            </div>
-
-            <div class="col s4">
-              <div class="card small">
-                <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="assets/images/maneki_b.jpg">
-                </div>
-                <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">Cultura Japonesa<i class="material-icons right">more_vert</i></span>
-                </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                  <ul>
-                    <li><img src="assets/images/icons-extra/flag-of-japan.png" class="extra-icons" alt=""></li>
-                    <li><img src="assets/images/icons-extra/cherry-blossom.png" class="extra-icons" alt=""></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="col s4">
-              <div class="card small">
-                <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="assets/images/light.jpg">
-                </div>
-                <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">Food & Drinks<i class="material-icons right">more_vert</i></span>
-                </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                  <ul>
-                    <li><img src="assets/images/icons-extra/soda-bottle.png" class="extra-icons" alt=""></li>
-                    <li><i class="fas fa-coffee fa-3x"></i></li>
-                    <li><img src="assets/images/icons-extra/sushi-and-chopsticks-1.png" class="extra-icons" alt=""></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="col s4">
-              <div class="card small">
-                <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="assets/images/sailormoon.jpg">
-                </div>
-                <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">Anime<i class="material-icons right">more_vert</i></span>
-                </div>
-                <div class="card-reveal">
-                  <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                  <ul>
-                    <li><img src="assets/images/icons-extra/Hello_Kitty.png" class="extra-icons" alt=""></li>
-                    <li><img src="assets/images/icons-extra/sailor_moon.png" class="extra-icons" alt=""></li>
-                    <li><img src="assets/images/icons-extra/cat.png" class="extra-icons" alt=""></li>
-                    <li><i class="far fa-smile fa-3x"></i></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-          </div>
+  <!-- SECCION SOBRE MI -->
+  <div id="gray" class="block about-me">
+    <nav class="pushpin-demo-nav pin-top" data-target="gray" style="top: 0px;">
+      <div id="gray-nav" class="nav-wrapper">
+        <div class="container">
+          <a href="#">Hola!</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse right">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="nav-mobile right hide-on-med-and-down">
+            <li>
+              <a href="#">Habilidades</a>
+            </li>
+            <li>
+              <a href="#">Proyectos</a>
+            </li>
+            <li>
+              <a href="#">¡Contáctame!</a>
+            </li>
+          </ul>
         </div>
       </div>
+    </nav>
 
+    <div class="row">
+
+      <div class="col s12 m6">
+        <img src="assets/images/profile_temp.jpg" id="profile_temp" class="responsive-img circle" alt="">
+      </div>
+
+      <div class="col s12 m6">
+        <h2 id="title-short-bio" class="short-bio">Hola, mi nombre es Daniela</h2>
+        <p id="description-short-bio">
+          Soy alumna parte de la Quinta Generación de Laboratoria, con especialización en Desarrollo Front-End. También soy
+          alumna Titulada de Inacap, en la carrera de Publicidad. Con el tiempo fui especializándome en Diseño Gráfico, ya
+          que es un área en la que me gusta mucho expresar mi creatividad. Siempre mantengo el interés por escuchar, descubrir,
+          aprender, trabajar en equipo e irme superando cada día.
+        </p>
+        <br>
+        <div class="divider"></div>
+
+        <div class="col s12 m12">
+          <h2 class="short-bio">Unas cuantas aficiones e intereses</h2>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card small hide-on-med-and-down">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="assets/images/maneki_b.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Cultura Japonesa
+                <i class="material-icons right">more_vert</i>
+              </span>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">
+                <i class="material-icons right">close</i>
+              </span>
+              <ul>
+                <li>
+                  <img src="assets/images/icons-extra/flag-of-japan.png" class="extra-icons" alt="">
+                </li>
+                <li>
+                  <img src="assets/images/icons-extra/cherry-blossom.png" class="extra-icons" alt="">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card small hide-on-med-and-down">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="assets/images/light.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Food & Drinks
+                <i class="material-icons right">more_vert</i>
+              </span>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">
+                <i class="material-icons right">close</i>
+              </span>
+              <ul>
+                <li>
+                  <img src="assets/images/icons-extra/soda-bottle.png" class="extra-icons" alt="">
+                </li>
+                <li>
+                  <i class="fas fa-coffee fa-3x"></i>
+                </li>
+                <li>
+                  <img src="assets/images/icons-extra/sushi-and-chopsticks-1.png" class="extra-icons" alt="">
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="collection show-on-small hide-on-med-and-up">
+            <a href="#!" class="collection-item">Cultura Japonesa</a>
+            <a href="#!" class="collection-item">Food & Drinks</a>
+            <a href="#!" class="collection-item">90's Anime</a>
+            <a href="#!" class="collection-item">Gatos!</a>
+          </div>
+
+
+
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card small hide-on-med-and-down">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="assets/images/sailormoon.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">90's Anime
+                <i class="material-icons right">more_vert</i>
+              </span>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">
+                <i class="material-icons right">close</i>
+              </span>
+              <ul>
+                <li>
+                  <img src="assets/images/icons-extra/Hello_Kitty.png" class="extra-icons" alt="">
+                </li>
+                <li>
+                  <img src="assets/images/icons-extra/sailor_moon.png" class="extra-icons" alt="">
+                </li>
+                <li>
+                  <img src="assets/images/icons-extra/cat.png" class="extra-icons" alt="">
+                </li>
+                <li>
+                  <i class="far fa-smile fa-3x"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
 
+  </div>
 
 
+  <!-- SECCION HABILIDADES -->
+  <div id="black" class="block">
+    <nav class="pushpin-demo-nav pin-top" data-target="black" style="top: 0px;">
+      <div id="black-nav" class="nav-wrapper">
+        <div class="container">
+          <a href="#">Hola!</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse right">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="nav-mobile right hide-on-med-and-down">
+            <li>
+              <a href="#">Habilidades</a>
+            </li>
+            <li>
+              <a href="#">Proyectos</a>
+            </li>
+            <li>
+              <a href="#">¡Contáctame!</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-    <div class="block skills">
+    <div class="skills">
       <div class="row">
         <div class="col s12">
-          <div class="col s6 skills-part-1">
-            <h2>Manejo de Software</h2>
-            <div class="divider"></div>
-            <br>
-            <div class="row">
-              <div class="col s12">
-                <div class="col s4">
-                  <span class="devicons"><i class="devicon-html5-plain"></i></span>
-                </div>
-                <div class="col s4">
-                  <span class="devicons"><i class="devicon-css3-plain"></i></span>
-                </div>
-                <div class="col s4">
-                  <span class="devicons"><i class="devicon-atom-original"></i></span>
-                </div>
-              </div>
-            </div>
 
-            <div class="row">
-              <div class="col s12">
-                <div class="col s4">
-                  <i class="devicon-bootstrap-plain devicons"></i>
-                </div>
-                <div class="col s4">
-                  <i class="devicon-javascript-plain devicons"></i>
-                </div>
-                <div class="col s4">
-                  <i class="devicon-jquery-plain devicons"></i>
-                </div>
-              </div>
-            </div>
+          <div class="col s12 m6">
+            <div class="skills-part-1">
+              <h2 id="title-skills-1" class="short-bio">Manejo de Software</h2>
+              <div class="divider"></div>
+              <br>
 
-            <div class="row">
-              <div class="col s12">
+              <div class="row">
                 <div class="col s4">
-                  <i class="devicon-github-plain devicons"></i>
+                  <div class="chip">
+                    <span class="devicons">
+                      <i class="devicon-html5-plain"></i>
+                    </span>
+                    HTML
+                  </div>
+                </div>
+
+                <div class="col s4">
+                  <div class="chip">
+                    <span class="devicons">
+                      <i class="devicon-css3-plain"></i>
+                    </span>
+                    CSS
+                  </div>
+                </div>
+
+                <div class="col s4">
+                  <div class="chip">
+                    <span class="devicons">
+                      <i class="devicon-javascript-plain devicons"></i>
+                    </span>
+                    JavaScript
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="row">
+                <div class="col s4">
+                  <span class="devicons">
+                    <i class="devicon-jquery-plain devicons"></i>
+                  </span>
+                </div>
+
+                <div class="col s4">
+                  <span class="devicons">
+                    <i class="devicon-bootstrap-plain devicons"></i>
+                  </span>
+                </div>
+
+                <div class="col s4">
+                  <span class="devicons">
+                    <i class="devicon-github-plain devicons"></i>
+                  </span>
+                </div>
+
+              </div>
+
+              <div class="row">
+                <div class="col s4">
+                  <span class="devicons">
+                    <i class="devicon-react-original"></i>
+                  </span>
+                </div>
+
+                <div class="col s4">
+                  <span class="devicons">
+                    <i class="devicon-illustrator-plain devicons"></i>
+                  </span>
+                </div>
+
+                <div class="col s4">
+                  <span class="devicons">
+                    <i class="devicon-photoshop-plain devicons"></i>
+                  </span>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col s12 m6">
+            <div class="skills-part-2">
+              <h2 id="title-skills-2" class="short-bio">Habilidades</h2>
+              <div class="divider"></div>
+              <br>
+
+              <div class="row">
+                <div class="col s4">
+                  <i class="devicon-photoshop-plain devicons"></i>
                 </div>
                 <div class="col s4">
-                  <i class="devicon-illustrator-plain devicons"></i>
+                  <i class="devicon-photoshop-plain devicons"></i>
                 </div>
                 <div class="col s4">
                   <i class="devicon-photoshop-plain devicons"></i>
                 </div>
               </div>
-            </div>
-          </div>
 
-          <div class="col s6 skills-part-2">
-            <h2>Habilidades</h2>
-            <div class="divider"></div>
+              <div class="row">
+                <div class="col s4">
+                  <i class="devicon-photoshop-plain devicons"></i>
+                </div>
+                <div class="col s4">
+                  <i class="devicon-photoshop-plain devicons"></i>
+                </div>
+                <div class="col s4">
+                  <i class="devicon-photoshop-plain devicons"></i>
+                </div>
+              </div>
 
-            <div class="row">
-              <div class="col s4">
-                <h2>G</h2>
+              <div class="row">
+                <div class="col s4">
+                  <i class="devicon-photoshop-plain devicons"></i>
+                </div>
+                <div class="col s4">
+                  <i class="devicon-photoshop-plain devicons"></i>
+                </div>
+                <div class="col s4">
+                  <i class="devicon-photoshop-plain devicons"></i>
+                </div>
               </div>
-              <div class="col s4">
-                <h2>H</h2>
-              </div>
-              <div class="col s4">
-                <h2>I</h2>
-              </div>
-            </div>
 
-            <div class="row">
-              <div class="col s4">
-                <h2>G</h2>
-              </div>
-              <div class="col s4">
-                <h2>H</h2>
-              </div>
-              <div class="col s4">
-                <h2>I</h2>
-              </div>
-            </div>
 
-            <div class="row">
-              <div class="col s4">
-                <h2>G</h2>
-              </div>
-              <div class="col s4">
-                <h2>H</h2>
-              </div>
-              <div class="col s4">
-                <h2>I</h2>
-              </div>
+
             </div>
           </div>
         </div>
       </div>
+
     </div>
+  </div>
 
-    <!--<div id="orange" class="block skills">
-      <nav class="pushpin-demo-nav pin-top" data-target: "orange" style="top: 0px;">
-        <div class="nav-wrapper">
-          <div class="container">
-            <a href="#">Skills</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li><a href="#">About Me</a></li>
-              <li><a href="#">Trabajos</a></li>
-              <li><a href="#">¡Contáctame!</a></li>
-            </ul>
-          </div>
+
+  <!-- SECCION TRABAJOS -->
+  <div id="gray-2" class="block">
+    <nav class="pushpin-demo-nav pin-top" data-target="gray-2" style="top: 0px;">
+      <div id="gray-2-nav" class="nav-wrapper">
+        <div class="container">
+          <a href="#">Hola!</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse right">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="nav-mobile right hide-on-med-and-down">
+            <li>
+              <a href="#">Habilidades</a>
+            </li>
+            <li>
+              <a href="#">Proyectos</a>
+            </li>
+            <li>
+              <a href="#">¡Contáctame!</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </div>-->
+      </div>
+    </nav>
 
-    <div class="block projects">
+    <div class="projects">
       <div class="row">
-        <div class="col s12">
-          <h2><em>Algunos Proyectos Realizados</em></h2>
+        <div class="col s12 m12">
+          <h2 id="title-projects" class="short-bio">Algunos Proyectos Realizados</h2>
         </div>
 
         <div class="row">
-          <div class="col s4">
+          <div class="col s12 m4">
             <div class="card small">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="assets/images/builder_cat.jpg">
               </div>
               <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Proyecto 1: Gato<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">DEMO</a></p>
+                <span class="card-title activator grey-text text-darken-4">Proyecto 1: Gato
+                  <i class="material-icons right">more_vert</i>
+                </span>
+                <p>
+                  <a href="#">DEMO /</a>
+                  <a href="#">/ Link Repositorio Github</a>
+                </p>
               </div>
               <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Proyecto 1: Gato<i class="material-icons right">close</i></span>
+                <span class="card-title grey-text text-darken-4">Proyecto 1: Gato
+                  <i class="material-icons right">close</i>
+                </span>
                 <p>Proyecto realizado para evaluación de manejo de JavaScript</p>
               </div>
             </div>
           </div>
 
-          <div class="col s4">
+          <div class="col s12 m4">
             <div class="card small">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="assets/images/builder_cat.jpg">
               </div>
               <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Proyecto 2: Gato<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">DEMO</a></p>
+                <span class="card-title activator grey-text text-darken-4">Proyecto 2: Gato
+                  <i class="material-icons right">more_vert</i>
+                </span>
+                <p>
+                  <a href="#">DEMO /</a>
+                  <a href="#">/ Link Repositorio Github</a>
+                </p>
               </div>
               <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Proyecto 2: Gato<i class="material-icons right">close</i></span>
+                <span class="card-title grey-text text-darken-4">Proyecto 2: Gato
+                  <i class="material-icons right">close</i>
+                </span>
                 <p>Proyecto realizado para evaluación de manejo de JavaScript</p>
               </div>
             </div>
           </div>
 
-          <div class="col s4">
+          <div class="col s12 m4">
             <div class="card small">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="assets/images/builder_cat.jpg">
               </div>
               <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Proyecto 3: Gato<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">DEMO</a></p>
+                <span class="card-title activator grey-text text-darken-4">Proyecto 3: Gato
+                  <i class="material-icons right">more_vert</i>
+                </span>
+                <p>
+                  <a href="#">DEMO /</a>
+                  <a href="#">/ Link Repositorio Github</a>
+                </p>
               </div>
               <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Proyecto 3: Gato<i class="material-icons right">close</i></span>
+                <span class="card-title grey-text text-darken-4">Proyecto 3: Gato
+                  <i class="material-icons right">close</i>
+                </span>
                 <p>Proyecto realizado para evaluación de manejo de JavaScript</p>
               </div>
             </div>
@@ -320,81 +475,147 @@
 
         </div>
 
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="card small">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="assets/images/builder_cat.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Proyecto 4: Gato
+                  <i class="material-icons right">more_vert</i>
+                </span>
+                <p>
+                  <a href="#">DEMO /</a>
+                  <a href="#">/ Link Repositorio Github</a>
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Proyecto 4: Gato
+                  <i class="material-icons right">close</i>
+                </span>
+                <p>Proyecto realizado para evaluación de manejo de JavaScript</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="card small">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="assets/images/builder_cat.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Proyecto 5: Gato
+                  <i class="material-icons right">more_vert</i>
+                </span>
+                <p>
+                  <a href="#">DEMO /</a>
+                  <a href="#">/ Link Repositorio Github</a>
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Proyecto 5: Gato
+                  <i class="material-icons right">close</i>
+                </span>
+                <p>Proyecto realizado para evaluación de manejo de JavaScript</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="card small">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="assets/images/builder_cat.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Proyecto 6: Gato
+                  <i class="material-icons right">more_vert</i>
+                </span>
+                <p>
+                  <a href="#">DEMO /</a>
+                  <a href="#">/ Link Repositorio Github</a>
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Proyecto 6: Gato
+                  <i class="material-icons right">close</i>
+                </span>
+                <p>Proyecto realizado para evaluación de manejo de JavaScript</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
+    </div>
+  </div>
+
+
+
+  <!-- SECCION CONTACTO -->
+  <div class="block contact-me">
+    <div class="row">
+      <div class="col s12 m12">
+        <h2 id="title-contact" class="short-bio">¡Contáctame!</h2>
+
+        <div class="collection show-on-small hide-on-med-and-up">
+          <a href="#!" class="collection-item tooltipped" data-position="bottom" data-delay="50" data-tooltip="E-Mail: daniela_gallardo_m@hotmail.com">
+            <i class="far fa-envelope-open fa-2x"></i>
+            <strong>E-Mail</strong>
+          </a>
+          <a href="https://github.com/Dany-Nok" class="collection-item tooltipped" data-position="bottom" data-delay="50" data-tooltip="Mi Repositorio Github">
+            <i class="fab fa-github fa-2x"></i>
+            <strong>Repositorio Github</strong>
+          </a>
+          <a href="https://www.linkedin.com/in/daniela-a-gallardo-marchant/" class="collection-item tooltipped" data-position="bottom"
+            data-delay="50" data-tooltip="Perfil LinkedIn">
+            <i class="fab fa-linkedin-in fa-2x"></i>
+            <strong>Perfil LinkedIn</strong>
+          </a>
+          <a href="#!" class="collection-item tooltipped" data-position="bottom" data-delay="50" data-tooltip="Visualización CV">
+            <i class="far fa-file-pdf fa-2x"></i>
+            <strong>Vista / Descarga CV</strong>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col s12 hide-on-med-and-down">
+
+        <a class="btn btn-floating btn-large waves-effect waves-light tooltipped contact-button" data-position="bottom" data-delay="50"
+          data-tooltip="E-Mail: daniela_gallardo_m@hotmail.com">
+          <i class="far fa-envelope fa-2x"></i>
+        </a>
+
+        <a href="https://github.com/Dany-Nok" class="btn btn-floating btn-large waves-effect waves-light tooltipped contact-button"
+          data-position="bottom" data-delay="50" data-tooltip="Mi Repositorio Github">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/daniela-a-gallardo-marchant/" class="btn btn-floating btn-large waves-effect waves-light tooltipped contact-button"
+          data-position="bottom" data-delay="50" data-tooltip="Perfil LinkedIn">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+
+        <a class="btn btn-floating btn-large waves-effect waves-light tooltipped contact-button" data-position="bottom" data-delay="50"
+          data-tooltip="Visualización CV">
+          <i class="far fa-file-pdf fa-2x"></i>
+        </a>
+
+      </div>
+
     </div>
 
 
-    <!--<div id="blue" class="block projects">
-      <nav class="pushpin-demo-nav pin-top" data-target: "blue" style="top: 0px;">
-        <div class="nav-wrapper">
-          <div class="container">
-            <a href="#">Trabajos Realizados</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li><a href="#">¡Contáctame!</a></li>
-              <li><a href="#">About Me</a></li>
-              <li><a href="#">Skills</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>-->
-
-    <div class="block contact-me">
-      <div class="row">
-        <div class="col s12">
-          <h2><em>¡Contáctame!</em></h2>
-          <div class="col s8">
-            <div class="row">
-              <div class="col s4">
-                <i class="far fa-envelope fa-5x"></i>
-                <p>daniela_gallardo_m@hotmail.com</p>
-              </div>
-              <div class="col s4">
-                <a class="btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="+56 9 9139 1034"><i class="fab fa-whatsapp fa-5x"></i></a>
-              </div>
-              <div class="col s4">
-                <i class="devicon-github-plain"></i>
-                <p>Mi Repositorio Github!</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col s6">
-                <i class="fab fa-linkedin fa-5x"></i>
-                <p>Linkedin</p>
-              </div>
-              <div class="col s6">
-                <i class="fas fa-paw fa-5x"></i>
-                <!--<p>Señales de Humo(?)</p>-->
-              </div>
-            </div>
-          </div>
-          <div class="col s4">
-            <h4>(Visualizar CV)</h4>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--<div id="yellow" class="block contact-me">
-      <nav class="pushpin-demo-nav pin-top" data-target: "yellow" style="top: 0px;">
-        <div class="nav-wrapper">
-          <div class="container">
-            <a href="#">¡Contáctame!</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li><a href="#">About Me</a></li>
-              <li><a href="#">Skills</a></li>
-              <li><a href="#">Trabajos Realizados</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>-->
-
+    <!-- FOOTER -->
     <footer class="page-footer">
       <div class="container">
         <div class="row">
-          <div class="col s12">
-            <p>Portafolio Daniela Gallardo Marchant - (c) 2018</p>
+          <div class="col s12 m12">
+            <p>Portafolio Daniela Gallardo Marchant -
+              <i class="fas fa-copyright"></i> 2018</p>
           </div>
         </div>
       </div>
@@ -409,6 +630,6 @@
     <script src="assets/js/app.js"></script>-->
     <script src="lib/typed.js"></script>
     <script src="assets/js/typed-text.js"></script>
-  </body>
+</body>
 
 </html>
